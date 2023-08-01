@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GeekSeek.master.cs" Inherits="GeekSeek.GeekSeek" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Geek Seek</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="site.css" />
+</head>
+    
+
+<body>
+    <div class="header">
+        <img src="images/Logo.png" alt="Geek Seek" id="logo-img"/>
+        <div class="topnav">
+            <ul>
+                <li><a>Login/Register</a></li>
+                <li><br /></li>
+                <li><a href="Cart.aspx">Cart</a></li>
+            </ul>
+        </div>
+    </div>
+    <ul class="nav">
+      <li><a href="Default.aspx">Home</a></li>
+      <li><a href="Shop.aspx">Shop</a></li>
+      <li><a href="About.aspx">About</a></li>
+      <li><a href="Site-Info.aspx">Site Info</a></li>
+    </ul>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        
+    </form>
+    <footer class="footer-distributed">
+
+		<div class="footer-right">
+			
+		</div>
+
+		<div class="footer-left">
+            <div>
+		        <img class="footer-logo" src="images/Logo.png" />
+            </div>
+            
+			<p>GeekSeek &copy; 2021</p>
+		</div>
+        <div class="footer-support">    
+            <h3>Support</h3>
+            <ul>
+                <li>Email: JasonArmitage@my.unt.edu</li>
+                <li>Phone: (999)555-1234</li>
+            </ul>
+        </div>
+
+	</footer>
+
+</body>
+</html>
